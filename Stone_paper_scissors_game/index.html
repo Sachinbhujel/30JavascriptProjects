@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>01 Project</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <!-- How to create a Rock Paper Scissors game -->
+  <h1>Stone Paper Scissor Game</h1>
+  <div class="container">
+    <div class="main">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG9gvolu6yyiFawnsluwQbFz8wY052urMEhg&usqp=CAU" width="120px" value="paper" id="paper" onclick="ourChoice(this)">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmfUCjJ4SFOReyiaZ2hure0thZMYJUn6NCg&usqp=CAU" width="120px" value="rock" id="rock" onclick="ourChoice(this)">
+      <img src="https://icon-library.com/images/rock-paper-scissors-icon/rock-paper-scissors-icon-5.jpg" width="120px" value="scissors" id="scissors" onclick="ourChoice(this)">
+    </div>
+    <h2 id="comp">Computer: <b id="compTurn">Waiting</b></h2>
+    <div class="count_numbers">
+      <div class="count_numbers_div">
+        <h2 id="your_point">0</h2>
+        <p>You</p>
+      </div>
+      <div class="count_numbers_div">
+        <h2 id="comp_point">0</h2>
+        <p>Comp.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
