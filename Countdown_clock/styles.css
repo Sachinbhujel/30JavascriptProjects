@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main {
+  background: black;
+  padding: 40px;
+  display: flex;
+  width: max-content;
+  padding-left: 10px;
+  gap: 20px;
+  padding-right: 10px;
+  align-items: center;
+}
+.img {
+  width: 280px;
+}
+.img img {
+  width: 100%;
+}
+.timer h2 {
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+#giveawayDate {
+  color: #ced4da;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 8px;
+}
+.timer_box_div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.timer_box {
+  background: white;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.timer_box h3 {
+  font-family: sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+}
+.timer_box p {
+  color: red;
+  text-align: center;
+  font-family: sans-serif;
+}
+@media (width<640px) {
+  .main {
+    flex-direction: column;
+  }
+}
