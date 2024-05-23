@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin-top: 50px;
+    font-size: 17px;
+    background-color: red;
+    width: max-content;
+    padding: 15px;
+    color: white;
+}
