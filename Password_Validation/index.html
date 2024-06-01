@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Password Validation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <div class='outside_main'>
+  <div class="main">
+    <h2>Password Validation</h2>
+    <div class="input_div">
+      <input type="password" id="passwordInput" onkeyup="validatePassword()">
+      <span class="material-symbols-outlined eye" id="open_eye" onclick="openEye()">
+        visibility
+      </span>
+      <span class="material-symbols-outlined eye" id="close_eye" onclick="closeEye()">
+        visibility_off
+      </span>
+    </div>
+    <div class="checkout_div">
+      <div class="check_div">
+        <span class="material-symbols-outlined check_icon check" id="lowerCaseCheck">
+          check
+        </span>
+        <span class="material-symbols-outlined check_icon" id="lowerCaseRadio">
+          radio_button_checked
+        </span>
+        <p>At least one lowercase character</p>
+      </div>
+
+      <div class="check_div">
+        <span class="material-symbols-outlined check_icon check" id="upperCaseCheck">
+          check
+        </span>
+        <span class="material-symbols-outlined check_icon" id="upperCaseRadio">
+          radio_button_checked
+        </span>
+        <p>At least one uppercase character</p>
+      </div>
+
+      <div class="check_div">
+        <span class="material-symbols-outlined check_icon check" id="numberCaseCheck">
+          check
+        </span>
+        <span class="material-symbols-outlined check_icon" id="numberCaseRadio">
+          radio_button_checked
+        </span>
+        <p>At least one number</p>
+      </div>
+
+      <div class="check_div">
+        <span class="material-symbols-outlined check_icon check" id="specialCaseCheck">
+          check
+        </span>
+        <span class="material-symbols-outlined check_icon" id="specialCaseRadio">
+          radio_button_checked
+        </span>
+        <p>At least one special character</p>
+      </div>
+
+      <div class="check_div">
+        <span class="material-symbols-outlined check_icon check" id="lengthCaseCheck">
+          check
+        </span>
+        <span class="material-symbols-outlined check_icon" id="lengthCaseRadio">
+          radio_button_checked
+        </span>
+        <p>At least 8 characters</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
