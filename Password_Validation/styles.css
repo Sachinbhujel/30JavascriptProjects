@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 14px;
+}
+
+.input_div {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid black;
+}
+
+.eye {
+  cursor: pointer;
+  font-size: 32px !important;
+}
+
+#close_eye {
+  display: none;
+}
+
+.input_div input {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  font-family: sans-serif;
+  outline: none;
+  padding: 10px;
+}
+
+.checkout_div {
+  padding-top: 5px;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  border-radius: 7px;
+  width: 100%;
+  background: #274c77;
+}
+
+.check_div {
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.check_icon {
+  color: white;
+}
+
+.check_div p {
+  font-family: sans-serif;
+  color: white;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+.check_div .check {
+  display: none;
+  color: #80ed99;
+}
+
+@media (width>480px) {
+  .main {
+    width: 380px;
+  }
+  .outside_main {
+    display: flex;
+    justify-content: center;
+  }
+}
