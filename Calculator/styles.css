@@ -84,3 +84,15 @@ button {
     height: 100vh;
   }
 }
+
+@media(width<300px){
+  .main{
+    width: 98%;
+    height: 430px;
+  }
+  button{
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+  }
+}
