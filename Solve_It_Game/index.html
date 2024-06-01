@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Solve It Game</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Brain Test 🧠</h1>
+  <div class="main">
+    <div class="quiz_div" id="quiz_div">
+      <div class="quiz_div_top">
+        <div class="quiz_div_top_left">
+          <p>Score</p>
+          <p id="score">0</p>
+        </div>
+        <p id="time_increase">0</p>
+      </div>
+      <div class="all_quiz_here">
+        <p id="question"></p>
+        <input type="number" id="answer" placeholder="Your answer">
+        <button onclick="submitAnswer()">Submit</button>
+      </div>
+    </div>
+    <div class="answer_div" id="answer_div">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgmVyEXuI0iZ2aNBLDwdySpPIgS_omC6qlJA&usqp=CAU">
+      <h2>Well done! Your score: <p id="result"></p>
+      </h2>
+    </div>
+  </div>
+
+  
+  <script src="index.js"></script>
+</body>
+</html>
