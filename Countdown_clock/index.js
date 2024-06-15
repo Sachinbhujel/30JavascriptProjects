@@ -1,4 +1,4 @@
-let countdate = new Date("April 30, 2024 00:00:00").getTime();
+let countdate = new Date("April 30, 2025 00:00:00").getTime();
 let x = setInterval(function () {
   let current = new Date().getTime();
   let distance = countdate - current;
