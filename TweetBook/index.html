@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TweetBook</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main" id="main">
+  <div class="left">
+    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" id="logo">
+    <div class="links_box">
+      <div class="links active">
+        <span class="material-symbols-outlined icons">
+          home
+        </span>
+        <h3>Home</h3>
+      </div>
+      <div class="links">
+        <span class="material-symbols-outlined icons">
+          explore
+        </span>
+        <h3>Explore</h3>
+      </div>
+      <div class="links">
+        <span class="material-symbols-outlined icons">
+          notifications
+        </span>
+        <h3>Notifications</h3>
+      </div>
+      <div class="links">
+        <span class="material-symbols-outlined icons">
+          mail
+        </span>
+        <h3>Messages</h3>
+      </div>
+      <div class="links">
+        <span class="material-symbols-outlined icons">
+          bookmark
+        </span>
+        <h3>Bookmarks</h3>
+      </div>
+      <div class="links">
+        <span class="material-symbols-outlined icons">
+          article
+        </span>
+        <h3>Lists</h3>
+      </div>
+      <div class="links">
+        <img src="https://images.pexels.com/photos/20762302/pexels-photo-20762302/free-photo-of-woman-in-sequin-dress-stanidng-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" id="profile">
+        <h3 id="profile3">Profile</h3>
+      </div>
+      <div class="links">
+        <span class="material-symbols-outlined icons">
+          expand_circle_down
+        </span>
+        <h3>More</h3>
+      </div>
+    </div>
+    <button id="tweet">Tweet</button>
+  </div>
+  <div class="middle" id="middle">
+    <div class="middle_home">
+      <span class="material-symbols-outlined menu" onclick="sideNavBar()">
+        menu
+      </span>
+      <h3>Tweetbook</h3>
+      <span class="material-symbols-outlined star_tweet" id="star_tweet1">
+        hotel_class
+      </span>
+            <span class="material-symbols-outlined star_tweet2" onclick="hastagShowBtn()" id="star_tweet2">
+        hotel_class
+      </span>
+    </div>
+    <hr id="hr">
+    <div class="middle_tweet">
+      <div class="middle_tweet_top">
+        <img src="https://images.pexels.com/photos/6898857/pexels-photo-6898857.jpeg?auto=compress&cs=tinysrgb&w=800">
+        <textarea id="textarea" placeholder="Type Something..."></textarea>
+      </div>
+      <div class="middle_tweet_bottom">
+        <div class="middle_tweet_bottom_icons">
+          <span class="material-symbols-outlined tweet_icons">
+            image
+          </span>
+          <img src="https://cdn3.iconfinder.com/data/icons/fluent-regular-24px-vol-4/24/ic_fluent_gif_24_regular-128.png" width="32px">
+          <img src="https://cdn2.iconfinder.com/data/icons/boxicons-regular-vol-3/24/bx-poll-1024.png" width="32px">
+          <span class="material-symbols-outlined tweet_icons">
+            sentiment_satisfied
+          </span>
+        </div>
+        <button onclick="tweetBtn()">Tweet</button>
+      </div>
+    </div>
+    <div id="silver_bg"></div>
+    <div class="all_tweets" id="all_tweets">
+      <div class="show_tweet">
+        <div class="tweets_left">
+        <img src="https://images.pexels.com/photos/20882950/pexels-photo-20882950/free-photo-of-young-woman-holding-a-plant.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load">
+      </div>
+        <div class="tweets_right">
+          <div class="tweets_right_top">
+          <div class="tweets_right_top_left">
+            <h4>Brie</h4>
+            <p>@Sktch_steleny</p>
+            <p>&#x2022; 3m</p>
+          </div>
+          <div class="tweets_right_top_left_right">
+            <span class="material-symbols-outlined arrow">
+              keyboard_arrow_down
+            </span>
+          </div>
+        </div>
+          <div class="tweets_right_middle">
+          <p>Giving standup comedy a go. Open mic starts at 7, hit me up if you want ticket <span class="hastags">#heregoesnothing</span></p>
+        </div>
+          <div class="tweets_right_bottom">
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/bubble-128.png">
+            <p>2</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn0.iconfinder.com/data/icons/social-productivity-line-art-7/128/retweet-128.png" class="retweet">
+            <p>4</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <i class="fas fa-heart heart" id="heart"></i>
+            <p>14</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn1.iconfinder.com/data/icons/ionicons-outline-vol-2/512/share-outline-128.png">
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="tweet_end_hr"></div>
+      <div class="show_tweet">
+        <div class="tweets_left">
+        <img src="https://images.pexels.com/photos/21716045/pexels-photo-21716045/free-photo-of-a-woman-in-a-black-dress-standing-in-the-woods.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load">
+      </div>
+        <div class="tweets_right">
+          <div class="tweets_right_top">
+          <div class="tweets_right_top_left">
+            <h4>Marie</h4>
+            <p>@marie_kem09</p>
+            <p>&#x2022; 10m</p>
+          </div>
+          <div class="tweets_right_top_left_right">
+            <span class="material-symbols-outlined arrow">
+              keyboard_arrow_down
+            </span>
+          </div>
+        </div>
+          <div class="tweets_right_middle">
+          <p>Vacation is going great! <span class="hastags">#peacefulvibes</span></p>
+        </div>
+          <div class="tweets_right_bottom">
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/bubble-128.png">
+            <p>10</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn0.iconfinder.com/data/icons/social-productivity-line-art-7/128/retweet-128.png" class="retweet">
+            <p>9</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <i class="fas fa-heart heart" id="heart"></i>
+            <p>44</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn1.iconfinder.com/data/icons/ionicons-outline-vol-2/512/share-outline-128.png">
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="tweet_end_hr"></div>
+      <div class="show_tweet">
+        <div class="tweets_left">
+        <img src="https://images.pexels.com/photos/20832063/pexels-photo-20832063/free-photo-of-woman-standing-on-a-bridge.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load">
+      </div>
+        <div class="tweets_right">
+          <div class="tweets_right_top">
+          <div class="tweets_right_top_left">
+            <h4>Marie</h4>
+            <p>@marie_kem09</p>
+            <p>&#x2022; 10m</p>
+          </div>
+          <div class="tweets_right_top_left_right">
+            <span class="material-symbols-outlined arrow">
+              keyboard_arrow_down
+            </span>
+          </div>
+        </div>
+          <div class="tweets_right_middle">
+          <p>Finally, I am back again guys! <span class="hastags">#welcomeback</span></p>
+        </div>
+          <div class="tweets_right_bottom">
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/bubble-128.png">
+            <p>2</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn0.iconfinder.com/data/icons/social-productivity-line-art-7/128/retweet-128.png" class="retweet">
+            <p>2</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <i class="fas fa-heart heart" id="heart"></i>
+            <p>4</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn1.iconfinder.com/data/icons/ionicons-outline-vol-2/512/share-outline-128.png">
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="tweet_end_hr"></div>
+      <div class="show_tweet">
+        <div class="tweets_left">
+        <img src="https://images.pexels.com/photos/3420044/pexels-photo-3420044.jpeg?auto=compress&cs=tinysrgb&w=800">
+      </div>
+        <div class="tweets_right">
+          <div class="tweets_right_top">
+          <div class="tweets_right_top_left">
+            <h4>KimJok</h4>
+            <p>@ki_jokn23</p>
+            <p>&#x2022; 30m</p>
+          </div>
+          <div class="tweets_right_top_left_right">
+            <span class="material-symbols-outlined arrow">
+              keyboard_arrow_down
+            </span>
+          </div>
+        </div>
+          <div class="tweets_right_middle">
+          <p>Gsoc cracked ho gya 🎉🎉<span class="hastags"> #google #gsoc</span></p>
+        </div>
+          <div class="tweets_right_bottom">
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/bubble-128.png">
+            <p>2</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn0.iconfinder.com/data/icons/social-productivity-line-art-7/128/retweet-128.png" class="retweet">
+            <p>2</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <i class="fas fa-heart heart" id="heart"></i>
+            <p>4</p>
+          </div>
+          <div class="tweets_right_bottom_icons">
+            <img src="https://cdn1.iconfinder.com/data/icons/ionicons-outline-vol-2/512/share-outline-128.png">
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="tweet_end_hr"></div>
+    </div>
+  </div>
+  <div class="right" id="right">
+    <div class="right_top">
+      <div class="right_top_input">
+        <span class="material-symbols-outlined" onclick="closeBtn()" id="close">
+          close
+        </span>
+        <span class="material-symbols-outlined" id="close2">
+          close
+        </span>
+        <input type="text">
+        <span class="material-symbols-outlined" onclick="searchBtn()">
+          search
+        </span>
+      </div>
+    </div>
+    <div class="right_middle">
+      <h3>Realated People</h3>
+      <div class="related_people_div">
+        <div class="related_people_account">
+          <div class="related_people_account_left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqzPani-dgVfZJ-1podoXYgpvXL49YFIfYfMlQiNeYiA&s">
+            <div class="related_people_account_left_user">
+              <h4>Jujutsu Kaisen</h4>
+              <p>@Go_Jover</p>
+            </div>
+          </div>
+          <div class="related_people_account_right">
+            <button id="follow" onclick="followBtn(this)">Follow</button>
+          </div>
+        </div>
+        <div class="related_people_account">
+          <div class="related_people_account_left">
+            <img src="https://avatars.githubusercontent.com/u/87616854?v=4">
+            <div class="related_people_account_left_user">
+              <h4>Saajan Bhujel</h4>
+              <p>@saajanbhujel</p>
+            </div>
+          </div>
+          <div class="related_people_account_right">
+            <button id="follow" onclick="followBtn(this)">Follow</button>
+          </div>
+        </div>
+        <div class="related_people_account">
+          <div class="related_people_account_left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBpRXAfgUczXB6-shHUG_hrYVogLE70DT0eweJxMDzA&s">
+            <div class="related_people_account_left_user">
+              <h4>Thoufiq Uchiha</h4>
+              <p>@IzharThouf29718</p>
+            </div>
+          </div>
+          <div class="related_people_account_right">
+            <button id="follow" onclick="followBtn(this)">Follow</button>
+          </div>
+        </div>
+      </div>
+     </div>
+    <div class="right_lower">
+      <h3>What's happenning</h3>
+      <div class="trending_divs">
+        <div class="trending">
+          <div class="trending_topic">
+            <p>Trending</p>
+            <span class="material-symbols-outlined">
+              more_horiz
+            </span>
+          </div>
+          <h4>#jjk259</h4>
+          <p>2450 posts</p>
+        </div>
+        <div class="trending">
+          <div class="trending_topic">
+            <p>Trending</p>
+            <span class="material-symbols-outlined">
+              more_horiz
+            </span>
+          </div>
+          <h4>Sam Altman</h4>
+          <p>1134 posts</p>
+        </div>
+        <div class="trending">
+          <div class="trending_topic">
+            <p>Business&#x25E6;Trending</p>
+            <span class="material-symbols-outlined">
+              more_horiz
+            </span>
+          </div>
+          <h4>Flipkart</h4>
+          <p>8643 posts</p>
+        </div>
+        <div class="trending">
+          <div class="trending_topic">
+            <p>Trending in India</p>
+            <span class="material-symbols-outlined">
+              more_horiz
+            </span>
+          </div>
+          <h4>#GalgotiyaUniversity</h4>
+          <p>12.4k posts</p>
+        </div>
+        <div class="trending">
+          <div class="trending_topic">
+            <p>Trending</p>
+            <span class="material-symbols-outlined">
+              more_horiz
+            </span>
+          </div>
+          <h4>#GalgotiyaUniversityStaff</h4>
+          <p>34.1k posts</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <div id="mySidenav" class="sidenav">
+    <div class="left" id="left2">
+      <div class="left_top">
+        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" id="logo">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      </div>
+    <div class="links_box links_box2">
+      <div class="links active links2 active2">
+        <span class="material-symbols-outlined icons icons2">
+          home
+        </span>
+        <h2 class="sideBarName">Home</h2>
+      </div>
+      <div class="links links2">
+        <span class="material-symbols-outlined icons icons2">
+          explore
+        </span>
+        <h2 class="sideBarName">Explore</h2>
+      </div>
+      <div class="links links2">
+        <span class="material-symbols-outlined icons icons2">
+          notifications
+        </span>
+        <h2 class="sideBarName">Notifications</h2>
+      </div>
+      <div class="links links2">
+        <span class="material-symbols-outlined icons icons2">
+          mail
+        </span>
+        <h2 class="sideBarName">Messages</h2>
+      </div>
+      <div class="links links2">
+        <span class="material-symbols-outlined icons icons2">
+          bookmark
+        </span>
+        <h2 class="sideBarName">Bookmarks</h2>
+      </div>
+      <div class="links links2">
+        <span class="material-symbols-outlined icons icons2">
+          article
+        </span>
+        <h2 class="sideBarName">Lists</h2>
+      </div>
+      <div class="links links2">
+        <img src="https://images.pexels.com/photos/20900060/pexels-photo-20900060/free-photo-of-hueseyin.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" id="profile">
+        <h3 class="sideBarName" id="profile2">Profile</h3>
+      </div>
+      <div class="links links2">
+        <span class="material-symbols-outlined icons icons2">
+          expand_circle_down
+        </span>
+        <h2 class="sideBarName">More</h2>
+      </div>
+    </div>
+    <button id="tweet2">Tweet</button>
+  </div>
+  </div>
+</div>
+
+  <script src="index.js"></script>
+</body>
+</html>
