@@ -66,7 +66,7 @@ async function allPost() {
 
     loadPostsFromLocalStorage();
     if (postsArray.length === 0) {
-      postDiv.innerHTML = `<h1>Can't Find A Post</h1>`;
+      postDiv.innerHTML = `<h4>Can't Find A Post</h4>`;
     } else {
       let postsAll = postsArray
         .map(
