@@ -167,7 +167,7 @@ span {
 
 @media (width<360px) {
   .app {
-    width: 100%;
+    width: 95%;
     margin-bottom: 20px;
   }
   .user_info {
