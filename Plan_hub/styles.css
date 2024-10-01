@@ -145,6 +145,7 @@ h4{
   background: #6b8e23;
   width: 100px;
   color: white;
+  border: none;
   padding: 8px;
   border-radius: 30px;
   font-family: sans-serif;
@@ -165,7 +166,7 @@ span {
   color: red;
 }
 
-@media (width<360px) {
+@media (width<400px) {
   .app {
     width: 95%;
     margin-bottom: 20px;
