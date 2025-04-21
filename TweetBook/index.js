@@ -56,7 +56,7 @@ function tweetBtn() {
   let randomRetweet = Math.floor(Math.random() * 6);
   let randomLike = Math.floor(Math.random() * 12);
   let randomShare = Math.floor(Math.random() * 8);
-  let randomMinutes = Math.floor(Math.random() * 50);
+  let randomMinutes = Math.floor(Math.random() * 1);
   if (textarea.value == "") {
     alert("Type Something....");
   } else {
